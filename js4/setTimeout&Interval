@@ -1,0 +1,46 @@
+/*setTimeout and clearTimeout*/
+const btn =document.querySelector('button');
+// const printName=(name)=>{
+// console.log(
+//     `Welcome,${name}`
+// );
+// }
+// const printIncome=(income)=>{
+// console.log(
+//     `Welcome,${income}`
+// );
+// }
+// const printGender=(gender)=>{
+// console.log(
+//     `Welcome,${gender}`
+// );
+// }
+// setTimeout(printName,3000,"Bhaskar")
+// setTimeout(printIncome,5000,100000)
+// setTimeout(printGender,6000,"Male")
+
+/*const printName=(name,income,gender)=>{
+    console.log(
+        `Welcome,${name}.Your income is ${income} and your Gender is ${gender}`
+    );
+    }*/
+
+//setTimeout(printName,2000,"Abhi",200000,"Male")
+/*const customTimeout1=setTimeout(printName,2000,"Abhi",200000,"Male")
+btn.addEventListener("click",()=>{
+    clearTimeout(customTimeout1);
+})*/
+
+/* setInterval and clearInterval */
+//In setInterval the function will execute after given time interval again and again.
+const printName=(name,gender)=>{
+    let income =Math.random()*10000
+    console.log(
+        `Welcome,${name}.Your income is ${income} and your Gender is ${gender}`
+    );
+    }
+
+const customTimeout2=setInterval(printName,2000,"Abhi","Male")
+btn.addEventListener("click",()=>{
+    clearInterval(customTimeout2);
+})

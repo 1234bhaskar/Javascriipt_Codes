@@ -15,7 +15,6 @@ a.then((parameter)=>{
 
 /**
 const a= new Promise((resolve,reject)=>{
-    //resolve("Promise Fullfilled")
     let success=false;
     if(success)
     resolve("Promise Fullfilled")
